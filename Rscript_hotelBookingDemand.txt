@@ -1,0 +1,29 @@
+#density_plot_agent
+> plot(density(df$agent, bw = 0.35))
+> plot(density(df$agent, bw = 0.05))
+> plot(density(df$agent, bw = 0.15))
+> plot(density(df$agent, bw = 0.5))
+
+> plot(density(df$babies, bw = 0.15))
+> plot(density(df$babies, bw = 0.5))
+> plot(density(df$babies, bw = 0.35))
+> plot(density(df$babies, bw = 0.25))
+
+> plot(density(df$adults, bw = 0.5))
+> plot(density(df$adults, bw = 0.45))
+> plot(density(df$adults, bw = 0.25))
+> plot(density(df$adults, bw = 0.15))
+
+plot(density(df$lead_time, bw = 0.15))
+> plot(density(df$lead_time, bw = 0.2))
+> plot(density(df$lead_time, bw = 0.3))
+> plot(density(df$lead_time, bw = 0.5))
+
+#whisker_plot
+boxplot(df$lead_time,  df$arrival_date_week_number, main = "Multiple boxplots for comparision",at = c(1,2),
++         names = c("lead time", "arrival date week"),
++         las = 3,
++         col = c("orange","red"),
++         border = "brown",
++         horizontal = TRUE,
++         notch = TRUE)
